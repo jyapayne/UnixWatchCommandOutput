@@ -18,3 +18,8 @@ To exit, ctrl-c or ESC.
 
 Right now, this program will refresh every 1 second, and it is not configurable.
 I might update this in the future to be configurable.
+
+
+Requirements:
+
+python 2.7.2
