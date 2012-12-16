@@ -89,6 +89,8 @@ class UnixWatchCommand:
         retcode = process.poll()
 
         if retcode:
+                self.stop.set()
+                self.restoreScreen()
                 raise subprocess.CalledProcessError(retcode, command,
                                                     output=output[0])
         return output.splitlines()
